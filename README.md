@@ -19,6 +19,6 @@ A Doctor knows that meningitis causes a stiff neck 50% of the time. They also kn
             (1/20)
 ```
 
-## Naive Bayes Classification 
+## Naive Bayes Classification
 
-A NBC considers each attribute and class label as random variables. Given a record with attributes (A :sub:`1`, A :sub:`2`,..., A  :sub:`n`), the goal is to find the value of C that maximizes P(C| A :sub:`1`, A :sub:`2`,..., A  :sub:`n`).
+A NBC considers each attribute and class label as random variables. Given a record with attributes (A<sub>1</sub>, A<sub>2</sub>,..., A<sub>n</sub>), the goal is to find the value of C that maximizes P(C|A<sub>1</sub>, A<sub>2</sub>,..., A<sub>n</sub>).
