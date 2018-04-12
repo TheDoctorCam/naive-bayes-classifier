@@ -3,7 +3,7 @@
  ## About
 
 The Bayes Classifier (BC) is a probabilistic framework so solving
-classification problems. A Naive Bayes Classifier is an approximation of a BC, where we assume conditional independence P(X|Y, Z) = P(X|Z).
+classification problems. A Naive Bayes Classifier (NBC) is an approximation of a BC, where we assume conditional independence P(X|Y, Z) = P(X|Z).
 
 ## Bayes Classification Example
 
@@ -18,3 +18,7 @@ A Doctor knows that meningitis causes a stiff neck 50% of the time. They also kn
 2. p(Y|X) = ---------------- = 0.0002
             (1/20)
 ```
+
+## Naive Bayes Classification 
+
+A NBC considers each attribute and class label as random variables. Given a record with attributes (A :sub:`1`, A :sub:`2`,..., A  :sub:`n`), the goal is to find the value of C that maximizes P(C| A :sub:`1`, A :sub:`2`,..., A  :sub:`n`).
