@@ -1,0 +1,34 @@
+1) The Bayes Classifier (BC) is a probabilistic framework so solving
+   classification problems. A Naive Bayes Classifier (NBC) is an approximation of a BC,
+   where we assume conditional independence P(X|Y, Z) = P(X|Z).
+
+2) For my implementation, I structured my program to first process the data and
+   then classify the processed data. Two types were created, a multimap with a
+   map pointer and int pointer, and a pointer_vector, a vector of vector pointers.
+
+   The data processing checks for validity and stores the labels as ints, and the values
+   in a vector of int pointers for dynamic allocation and quick memory cleanup.
+   Key-value pairs are stored using maps.
+
+   The classifier takes in the two created types, multi_map and pointer_vector,
+   as arguments. First, the positive or negative labels are tallied and the probability
+   of a positive or negative label is calculated. After this, the true_positives,
+   false_positives, true_positives, and false_negatives are calculated based on predictions.
+   
+
+3) -----Output-----
+
+   $ ./NaiveBayes breast_cancer.train breast_cancer.test
+     34 22 24 100
+     23 6 44 33
+
+   $ ./NaiveBayes led.train led.test
+     525 113 557 892
+     297 54 303 480
+
+
+4) My implementation of a Naive Bayes Classifier could be improved
+   through better smoothing and a meta-algorithm like AdaBoost to improve
+   the performance of the program running over larger datasets. If AdaBoost was
+   incorporated, I would have to be careful about noisy data and outliers since
+   AdaBoost is sensitive to those.
