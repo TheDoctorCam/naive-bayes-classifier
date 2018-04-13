@@ -108,7 +108,7 @@ void NaiveBayes::data_processing(const string & file, pointer_vector & pv, multi
     pos = line.find(' ');
     if(pos != string::npos) {
       label = stoi(line.substr(0, pos));
-      values->push_back(label); 	// First element on will be the label
+      values->push_back(label);
       line = line.substr(pos + 1);
     }
 
@@ -144,7 +144,7 @@ if((values->size()) > max_length)
     int val = values->at(count);
     auto ptr = mp.find(label);
 
-    // Create new key val for unencounter class
+    // Create key:value pair
     if(ptr == mp.end()) {
       map<int, int> * temp = new map<int, int>;
       temp->insert(std::make_pair(val, 1));
